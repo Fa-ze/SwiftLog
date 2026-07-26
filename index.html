@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #7c3aed;
+        --color-primary-dark: #5b21b6;
+        --color-dark: #1e1b2e;
+        --color-light: #f8f7ff;
+      }
+    </style>
+    <title>SwiftLog-Digital Siwes Logbook</title>
+  </head>
+  <body class="bg-white text-dark font-sans">
+    <!-- NAVBAR -->
+    <nav
+      class="fixed top-0 w-full bg-white border-b border-gray-100 shadow-sm z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!--Logo -->
+        <div class="text-2xl font-bold text-[#7c3aed]">
+          Swift<span class="text-[#1e1b2e]">Log</span>
+        </div>
+        <!-- Nav links -->
+        <ul class="flex gap-8 list-none">
+          <li>
+            <a
+              href="#features"
+              class="text-gray-500 hover:text-primary text-sm transition-colors duration-300"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#how it works"
+              class="text-gray-500 hover:text-primary text-sm transition-colors duration-300"
+              >How it works</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-gray-500 hover:text-[#7c3aed] text-sm transition-colors duration-300"
+              >About</a
+            >
+          </li>
+        </ul>
+        <!-- Buttons -->
+        <div class="flex gap-3 items-center">
+          <a
+            href="student-login.html"
+            class="text-[7c3aed] font-semibold text-sm hover:text-primary-dark transition-colors duration-300"
+            >Login</a
+          >
+          <a
+            href="student-login.html"
+            class="bg-[#7c3aed] text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-primary-dark transition-colors duration-300"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen items-center flex pt-20 pb-16 px-6">
+      <div
+        class="max-w-6xl mx-auto flex justify-between items-center gap-12 w-full"
+      >
+        <!-- left-text -->
+        <div class="max-w-xl">
+          <h1 class="text-5xl font-bold text-[#1e1b2e] leading-tight mb-4">
+            Your Digital <span class="text-[#7c3aed]">SIWES</span> Logbook
+          </h1>
+          <p class="text-gray-500 text-lg leaing-relaxed mb-8">
+            log your daily It activities, track your progress and submit reports
+            digitally. No more paper logbooks.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="student-login.html"
+              class="bg-primary text-white px-6 py-3 rounded-lg font-semi-bold hover:bg-[#5b21b6] transition-colors duration-300"
+              >Get Started</a
+            >
+            <a
+              href="#features"
+              class="border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors duration-300"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- Right-image -->
+        <div class="flex-1">
+          <img
+            src="images/dashboard-preview.png"
+            alt="Swiftlog Dashboard preview"
+            class="w-ful rounded-2xl shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- FEATURES SECTION -->
+    <section id="features" class="py-20 px-6 bg-light">
+      <div class="max-w-6xl mx-auto">
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-dark mb-4">
+            Why choose SwiftLog?
+          </h2>
+          <p class="text-gray-500 text-lg">
+            Everything you need for a seamless SIWES experience
+          </p>
+        </div>
+        <div>
+          <!-- CARDS GRID -->
+          <div class="grid grid-cols-3 gap-6">
+             <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-primary transition-all duration-300">
+                <span class="text-3xl mb-4 block">📝</span>
+                <h3 class="text-xl font-bold text-dark mb-2">Easy Log Entry</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Log daily SIWES activities quickly with a simple form</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-primary transition-all duration-300">
+                <span class="text-3xl mb-4 block">📊</span>
+                <h3 class="text-xl font-bold text-dark mb-2">Track Progress</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Visual stats showing weeks completed and total entries</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-primary transition-all duration-300">
+                <span class="text-3xl mb-4 block">✅</span>
+                <h3 class="text-xl font-bold text-dark mb-2">Supervisor Review</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Supervisor can review and approve entries online</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-primary transition-all duration-300">
+                <span class="text-3xl mb-4 block">🔒</span>
+                <h3 class="text-xl font-bold text-dark mb-2">Secure & Private</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Data only accessible to student and supervisor</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-primary transition-all duration-300">
+                <span class="text-3xl mb-4 block">📱</span>
+                <h3 class="text-xl font-bold text-dark mb-2">Mobile Friendly</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Works on any device, phone, tablet or laptop</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-primary transition-all duration-300">
+                <span class="text-3xl mb-4 block">📄</span>
+                <h3 class="text-xl font-bold text-dark mb-2">Export Reports</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Download completed logbook as PDF anytime</p>
+            </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- HOW IT WORKS SECTION -->
+<section id="how-it-works" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-dark mb-4">How It <span class="text-primary">Works</span></h2>
+            <p class="text-gray-500 text-lg">Three simple steps to get started</p>
+        </div>
+
+        <!-- Steps -->
+        <div class="grid grid-cols-3 gap-8">
+
+            <!-- Step 1 -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                    1
+                </div>
+                <h3 class="text-xl font-bold text-dark mb-3">Create Your Account</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Sign up with your matric number, department and placement details to get started.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                    2
+                </div>
+                <h3 class="text-xl font-bold text-dark mb-3">Log Daily Activities</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Every day fill in what you did during your SIWES placement. Takes less than 2 minutes.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                    3
+                </div>
+                <h3 class="text-xl font-bold text-dark mb-3">Get Approved</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Submit your weekly log to your supervisor for review and approval directly on the platform.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20 px-6 bg-light">
+    <div class="max-w-6xl mx-auto">
+        
+        <div class="max-w-3xl mx-auto text-center">
+            
+            <h2 class="text-4xl font-bold text-dark mb-6">
+                About <span class="text-primary">SwiftLog</span>
+            </h2>
+
+            <p class="text-gray-500 text-lg leading-relaxed mb-4">
+                SwiftLog was built with one goal in mind  to make the SIWES experience simpler, faster and more organized for Nigerian University students.
+            </p>
+
+            <p class="text-gray-500 text-lg leading-relaxed mb-4">
+                Every year, hundreds of 200 and 300 level students undergoing their SIWES are stuck carrying physical logbooks that get damaged, lost or delayed. Supervisors wait weeks to review entries. Students scramble to rewrite lost work.
+            </p>
+
+            <p class="text-gray-500 text-lg leading-relaxed mb-4">
+                SwiftLog eliminates all of that. Students log daily activities digitally from any device. Supervisors review and approve entries instantly online. No paper. No damage. No delays.
+            </p>
+
+            <p class="text-xl font-semibold text-primary mt-8">
+                Built by a SIWES student, for SIWES students. 💪
+            </p>
+
+            <div class="mt-10">
+                <a href="student-login.html" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-dark transition-colors duration-300">
+                    Get Started Free
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+   <!-- FOOTER -->
+<footer class="bg-dark text-white py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Top Footer -->
+        <div class="grid grid-cols-4 gap-8 mb-12">
+            
+            <!-- Logo and tagline -->
+            <div>
+                <h3 class="text-2xl font-bold mb-3">Swift<span class="text-primary">Log</span></h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Your digital SIWES logbook. Simple, fast and secure.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="font-semibold mb-4 text-white">Quick Links</h4>
+                <ul class="list-none flex flex-col gap-2">
+                    <li><a href="#home" class="text-gray-400 text-sm hover:text-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="#features" class="text-gray-400 text-sm hover:text-primary transition-colors duration-300">Features</a></li>
+                    <li><a href="#how-it-works" class="text-gray-400 text-sm hover:text-primary transition-colors duration-300">How it Works</a></li>
+                    <li><a href="#about" class="text-gray-400 text-sm hover:text-primary transition-colors duration-300">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Access -->
+            <div>
+                <h4 class="font-semibold mb-4 text-white">Access</h4>
+                <ul class="list-none flex flex-col gap-2">
+                    <li><a href="student-login.html" class="text-gray-400 text-sm hover:text-primary transition-colors duration-300">Student Login</a></li>
+                    <li><a href="admin-login.html" class="text-gray-400 text-sm hover:text-primary transition-colors duration-300">Admin Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="font-semibold mb-4 text-white">Contact</h4>
+                <ul class="list-none flex flex-col gap-2">
+                    <li class="text-gray-400 text-sm">📧 jamesudensi001@gmail.com</li>
+                    <li class="text-gray-400 text-sm">💬 WhatsApp</li>
+                    <li class="text-gray-400 text-sm">🔗 LinkedIn</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-700 pt-8 flex justify-between items-center">
+            <p class="text-gray-400 text-sm">&copy; 2026 SwiftLog. All rights reserved.</p>
+            <p class="text-gray-400 text-sm">Built by <span class="text-primary font-semibold">James Udensi</span></p>
+        </div>
+
+    </div>
+</footer>
+  </body>
+</html>
+
