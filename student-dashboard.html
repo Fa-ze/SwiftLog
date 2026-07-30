@@ -1,1 +1,49 @@
- 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #7c3aed;
+        --color-primary-dark: #5b21b6;
+        --color-dark: #1e1b2e;
+        --color-light: #f8f7ff;
+      }
+    </style>
+    <title>SwiftLog-Digital Siwes Logbook</title>
+  </head>
+  <body class="bg-white text-dark font-sans">
+    <!-- DASHBOARD NAVBAR  -->
+    <nav
+      class="fixed top-0 w-full bg-white border-b border-gray-100 shadow-sm z-50"
+    >
+      <div class="flex justify-between items-center px-6 py-4">
+        <!-- LOGO -->
+        <a href="index.html" class="text2xl font-bold text-[#7c3aed]">
+          Swift<span class="text-[#1e1b2e]">Log</span></a
+        >
+        <!-- Center-Page Title -->
+        <div class="text-sm text-gray-500">Student Dashboard</div>
+
+        <div class="flex items center gap-4">
+          <div class="text-right">
+            <p class="text-sm font-semibold text-dark">Student Name</p>
+            <p class="text-xs text-gray-500">Matric Number</p>
+          </div>
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm"
+          >
+            👤
+          </div>
+          <a
+            href="student-login.html"
+            class="text-sm text-gray-500 hover:text-primary transition-colors duration-300"
+            >Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
