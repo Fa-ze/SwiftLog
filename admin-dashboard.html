@@ -1,1 +1,98 @@
- 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #7c3aed;
+        --color-primary-dark: #5b21b6;
+        --color-dark: #1e1b2e;
+        --color-light: #f8f7ff;
+      }
+    </style>
+    <title>SwiftLog-Digital Siwes Logbook</title>
+  </head>
+  <body class="bg-white text-dark font-sans">
+    <!-- ADMIN NAVBAR  -->
+    <nav
+      class="fixed top-0 w-full bg-white border-b border-gray-100 shadow-sm z-50"
+    >
+      <div class="flex justify-between items-center px-6 py-4">
+        <!-- LOGO -->
+        <a href="index.html" class="text2xl font-bold text-[#7c3aed]">
+          Swift<span class="text-[#1e1b2e]">Log</span></a
+        >
+        <!-- Center-Page Title -->
+        <div class="text-sm text-gray-500">Admin Dashboard</div>
+
+        <div class="flex items center gap-4">
+          <div class="text-right">
+            <p class="text-sm font-semibold text-dark">Admin Name</p>
+            <p class="text-xs text-gray-500">Supervisor</p>
+          </div>
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm"
+          >
+            👤
+          </div>
+          <a
+            href="student-login.html"
+            class="text-sm text-gray-500 hover:text-primary transition-colors duration-300"
+            >Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- PAGE WRAPPER -->
+    <div class="flex pt-16 min-h-screen">
+      <!-- SIDEBAR -->
+      <aside
+        class="fixed left-0 top-16 h-full w-64 bg-white border-r border-gray-100 shadow-sm"
+      >
+        <div class="p-6">
+          <!-- Admin Info -->
+          <div class="bg-light rounded-xl p-4 mb-6 text-center">
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3"
+            >
+              👤
+            </div>
+            <p class="font-semibold text-dark text-sm">Admin Name</p>
+            <p class="text-xs text-gray-500">Supervisor</p>
+            <p class="text-xs text-primary mt-1">SwiftLog Admin</p>
+          </div>
+          <!-- Navigation -->
+<nav>
+ <p class="text-xs text-gray-400 font-semibold mb-2 uppercase">Menu</p> 
+ <ul class="list-none flex flex-col gap-1">
+  <li>
+   <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary text-white text-sm font-semibold">📊Dashboard</a>
+  </li>
+  <li>
+   <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-500 hover:bg-light hover:text-primary  text-sm font-semibold">👥All Students</a>
+  </li>
+  <li>
+   <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-500 hover:bg-light hover:text-primary  text-sm font-semibold">📝All Logs</a>
+  </li>
+  <li>
+   <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-500 hover:bg-light hover:text-primary  text-sm font-semibold">⏳Pending Reviews</a>
+  </li>
+ </ul>
+</nav>
+<p class="text-xs text-gray-400 font-semibold uppercase mb-3 mt-6">
+              Account
+            </p>
+            <ul class="list-none flex flex-col gap-1">
+             <li>
+              <a href="#"class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-500 hover:bg-light hover:text-primary  text-sm font-semibold">⚙️Settings</a>
+             </li>
+             <li>
+              <a href="#"class="flex items-center gap-3 px-4 py-3 rounded-lg text-red-400 hover:bg-red-50 text-sm font-semibold">🚪Logout</a>
+             </li>
+            </ul>
+        </div>
+      </aside>
+  </body>
+</html>
